@@ -1,0 +1,4 @@
+classes=12
+train=../train/images/train_images_roboflow.txt
+valid=../valid/images/valid_images_roboflow.txt
+names=../train/roboflow_data.names
