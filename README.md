@@ -1,5 +1,5 @@
 # ThermalPigR 
-This repo is considered as supplementary data for the paper "An approach towards a practicable assessment of neonatal piglet body core temperature using automatic object detection based on thermal images" The the main software for this application is R Studio, which should be installed on your system (version 2022.02.3 Build 492 or higher) with R version **>=4.1**.
+This repo is considered as supplementary data for the paper "An approach towards a practicable assessment of neonatal piglet body core temperature using automatic object detection based on thermal images" The main software for this application is R Studio, which should be installed on your system (version 2022.02.3 Build 492 or higher) with R version **>=4.1**.
 
 ## Software requirement and setup
 Download this repository and unzip to your preferred path.
@@ -31,15 +31,15 @@ This requires the following installations:
 Depending on how you installed Python, some of these packages may already be installed. 
 
 For the installation of the R package **ThermalPigR** itself, the *install_local()* function from the *remotes*
-package is needed. Please install and load it into the session. After downloading and adding the R-package `thermalpigR_1.0.0.tar.gz` (*https://drive.google.com/file/d/1M24Np47MHuTz8UD8tzhIiUv3dAy-dwjZ/view?usp=sharing*) to the working directory the package(**ThermalPigR**) can be installed via 
+package of R is needed. Please install and load it into the session. After downloading and adding the R-package `thermalpigR_1.0.1.tar.gz` (*ÄNDERN*) to the working directory the package(**ThermalPigR**) can be installed via 
 ```
-remotes::install_local("path to thermalpigR_1.0.0.tar.gz")
+remotes::install_local("path to thermalpigR_1.0.1.tar.gz")
 ```
 [^1]:https://github.com/gtatters/Thermimage
 [^2]:https://github.com/roboflow/yolov3
 [^3]:https://github.com/ultralytics/yolov3
 
-## Introduction with a 15 image dataset and reproduction of all results
+## Introduction with a 15 image dataset
 This is an introduction to the package ThermalPigR uploaded as supplementary material of the Paper "An approach towards a practicable assessment of neonatal piglet body core temperature using automatic object detection based on thermal images". 
 
 Load the package
@@ -53,7 +53,7 @@ wd<-"PATH"
 setwd(wd)
 ```  
 
-Produce the 15_data using the code of the paper "An approach towards a practicable assessment of neonatal piglet body core temperature using automatic object detection based on thermal images".  
+The following steps are used to produce the "15_data" using the code of the paper "An approach towards a practicable assessment of neonatal piglet body core temperature using automatic object detection based on thermal images".  
 
 1. Produce the "ClimateData_15" dataset.  
 -> Combine all Excel datasets with ClimateData information (all pens) into one dataset.  
@@ -107,7 +107,7 @@ AllFeatures_15<-get_rel_quad_features(BP_Features_15)
 ```
 **This following step is only nessecary if you want to use the manual body measurements of the piglets!!**   
 
-Reproduce the "lw" dataset stored in the package. Dataset. Length and width measurement:  
+Produce the "landw_15" dataset (Length and width measurement):  
 ```
 Features_length_15<-get_bodypart_features(BP_coord_15,path_im=source,
 climate_info=myData_15,objectdistance=0.5,
@@ -117,6 +117,6 @@ emission=0.98, landw=TRUE)
 landw_15<-Features_length_15[,c(1,2,34,35)]
 ```
 
+If you want to use this package for research and publications please cite it with the following citation:
 
-
-
+Agriculture Vol.... Issue...2023
