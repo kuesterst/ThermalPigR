@@ -31,7 +31,7 @@ This requires the following installations:
 Depending on how you installed Python, some of these packages may already be installed. 
 
 For the installation of the R package **ThermalPigR** itself, the *install_local()* function from the *remotes*
-package of R is needed. Please install and load it into the session. After downloading and adding the R-package `thermalpigR_1.0.1.tar.gz` (*ÄNDERN*) to the working directory the package(**ThermalPigR**) can be installed via 
+package of R is needed. Please install and load it into the session. After downloading and adding the R-package `thermalpigR_1.0.1.tar.gz` (*https://drive.google.com/file/d/1Jr2Ow3v49o3qf9VLsgDTv3ltBfjy5ibJ/view?usp=sharing*) to the working directory the package(**ThermalPigR**) can be installed via 
 ```
 remotes::install_local("path to thermalpigR_1.0.1.tar.gz")
 ```
