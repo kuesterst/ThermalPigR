@@ -72,15 +72,11 @@ myData_15<-matchTimeswithClimateData(myData_15,ClimateData_15)
 ```
 
 3. Produce the object detection results.   
-Before we can start with object detection, you have to download the yolov3spp-weights and add them to the working directory where you downloaded this github repo.
-You can download via this link:   
-*https://drive.google.com/file/d/1qqUVR34LNecylKlIqs1mwaOpAaX_7QFK/view?usp=share_link*
-
 --> Set the path to weights, config and names(classes).
 ```
-w<-paste(wd, "four_bp_yv3spp.pt",sep="/")
-cfg<-paste(wd, "yolov3-spp.cfg",sep="/")
-names<-paste(wd, "four_bp_yv3spp.names",sep="/")
+w<-system.file("extdata","four_bp_yv3spp.pt",package="thermalpigR")
+cfg<-system.file("extdata","yolov3-spp.cfg",package="thermalpigR")
+names<-system.file("extdata","four_bp_yv3spp.names",package="thermalpigR")
 ```
   
 --> Set the path to yolov3-master, add the image folder and set iou, confidence threshold and do the inference. The output is saved into the output_dir inside yolov3-master.(This step can take a few seconds)   
