@@ -72,7 +72,7 @@ myData_15<-matchTimeswithClimateData(myData_15,ClimateData_15)
 ```
 
 3. Produce the object detection results.   
---> Set the path to weights, config and names(classes).
+--> Set the path to weights, config and names(classes), which are integrated in the package as extdata.
 ```
 w<-system.file("extdata","four_bp_yv3spp.pt",package="thermalpigR")
 cfg<-system.file("extdata","yolov3-spp.cfg",package="thermalpigR")
