@@ -105,18 +105,6 @@ Produce "AllFeatures_15" dataset. This is used to set up the estimation models.
 ```
 AllFeatures_15<-get_rel_quad_features(BP_Features_15)
 ```
-**This following step is only nessecary if you want to use the manual body measurements of the piglets!!**   
-
-Produce the "landw_15" dataset (Length and width measurement):  
-```
-Features_length_15<-get_bodypart_features(BP_coord_15,path_im=source,
-climate_info=myData_15,objectdistance=0.5,
-emission=0.98, landw=TRUE)
-```
-```
-landw_15<-Features_length_15[,c(1,2,34,35)]
-```
-
 If you want to use this package for research and publications please cite it with the following citation:
 
 Agriculture Vol.... Issue...2023
