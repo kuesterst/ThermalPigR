@@ -103,4 +103,4 @@ AllFeatures_15<-get_rel_quad_features(BP_Features_15)
 ```
 If you want to use this package for research and publications please cite it with the following citation:
 
-Agriculture Vol.... Issue...2023
+Küster, S.; Haverkamp, L.; Schlather, M.; Traulsen, I. An Approach towards a Practicable Assessment of Neonatal Piglet Body Core Temperature Using Automatic Object Detection Based on Thermal Images. Agriculture 2023, 13, 812. https://doi.org/10.3390/agriculture13040812 
